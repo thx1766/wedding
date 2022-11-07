@@ -14,7 +14,9 @@
 		5733D43629162A2B00F2CC56 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43529162A2B00F2CC56 /* DetailsView.swift */; };
 		5733D43829162A6300F2CC56 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43729162A6300F2CC56 /* RingView.swift */; };
 		5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43929162AF500F2CC56 /* CustomSceneView.swift */; };
+		5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7884462918FB0B00CB53B7 /* weddingappicon.png */; };
 		5BAA35A52916323500245525 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 5BAA35A42916323500245525 /* test */; };
+		5BAA35A7291634F900245525 /* untitled.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 5BAA35A6291634F800245525 /* untitled.usdc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,9 @@
 		5733D43529162A2B00F2CC56 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		5733D43729162A6300F2CC56 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		5733D43929162AF500F2CC56 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
+		5B7884462918FB0B00CB53B7 /* weddingappicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weddingappicon.png; sourceTree = "<group>"; };
 		5BAA35A42916323500245525 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		5BAA35A6291634F800245525 /* untitled.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = untitled.usdc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 		5733D4192916277A00F2CC56 = {
 			isa = PBXGroup;
 			children = (
+				5B7884462918FB0B00CB53B7 /* weddingappicon.png */,
 				5733D4242916277A00F2CC56 /* wedding */,
 				5733D4232916277A00F2CC56 /* Products */,
 			);
@@ -59,6 +64,7 @@
 		5733D4242916277A00F2CC56 /* wedding */ = {
 			isa = PBXGroup;
 			children = (
+				5BAA35A6291634F800245525 /* untitled.usdc */,
 				5733D4252916277A00F2CC56 /* weddingApp.swift */,
 				5733D4272916277A00F2CC56 /* ContentView.swift */,
 				5733D4292916277C00F2CC56 /* Assets.xcassets */,
@@ -140,6 +146,8 @@
 				5733D42D2916277C00F2CC56 /* Preview Assets.xcassets in Resources */,
 				5733D42A2916277C00F2CC56 /* Assets.xcassets in Resources */,
 				5BAA35A52916323500245525 /* test in Resources */,
+				5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */,
+				5BAA35A7291634F900245525 /* untitled.usdc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

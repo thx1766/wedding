@@ -2,7 +2,7 @@
 //  Home.swift
 //  3DShoeApp (iOS)
 //
-//  Created by Balaji on 29/08/22.
+//  Created by Venus on 29/08/22.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ struct RingView: View {
     
     @State public var showDetails = false
     
-    @State var scene: SCNScene? = .init(named: "Nike_Air_Jordan.scn")
+    @State var scene: SCNScene? = .init(named: "untitled.usdc")
     // MARK: View Properties
     @State var isVerticalLook: Bool = false
     @State var currentSize: String = "9"
@@ -42,11 +42,11 @@ struct RingView: View {
     func ShoePropertiesView()->some View{
         VStack{
             VStack(alignment: .leading, spacing: 12) {
-                Text("Nike Air Jordan")
+                Text("Wedding Ring")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                 
-                Text("Men's Classic Shoes")
+                Text("Save the Date: October 7th, 2023 ")
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
                 
@@ -61,56 +61,19 @@ struct RingView: View {
             .padding(.top,30)
             .frame(maxWidth: .infinity,alignment: .leading)
             
-            // MARK: Size Picker
-            VStack(alignment: .leading, spacing: 12) {
-                Text("Size")
-                    .font(.title3.bold())
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10){
-                        let sizes = ["9","9.5","10","10.5","11","11.5","12","12.5"]
-                        ForEach(sizes,id: \.self){size in
-                            Text(size)
-                                .fontWeight(.semibold)
-                                .foregroundColor(currentSize == size ? .black : .white)
-                                .padding(.horizontal,20)
-                                .padding(.vertical,15)
-                                .background {
-                                    ZStack{
-                                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                            .fill(.white.opacity(0.2))
-                                        
-                                        if currentSize == size{
-                                            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                                .fill(.white)
-                                                .matchedGeometryEffect(id: "TAB", in: animation)
-                                        }
-                                    }
-                                }
-                                .onTapGesture {
-                                    withAnimation(.easeInOut){
-                                        currentSize = size
-                                    }
-                                }
-                        }
-                    }
-                }
-            }
-            .padding(.top,20)
-            
             // MARK: Check Out Button
             HStack(alignment: .top){
                 Button {
                     
                 } label: {
                     VStack(spacing: 12){
-                        Image("Bag")
+                        Image("weddingappicon")
                             .resizable()
                             .renderingMode(.template)
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 45, height: 45)
                         
-                        Text("$199.5")
+                        Text("Open in Maps")
                             .fontWeight(.semibold)
                             .padding(.top,15)
                     }
@@ -123,7 +86,7 @@ struct RingView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                    Text("Venue: Acadian Trail, San Fransisco")
                         .font(.callout)
                         .fontWeight(.semibold)
                         .foregroundColor(.gray)
@@ -131,7 +94,7 @@ struct RingView: View {
                     Button {
                         
                     } label: {
-                        Text("More Details")
+                        Text("Click to open in Maps")
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
                     }
