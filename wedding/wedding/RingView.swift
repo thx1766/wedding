@@ -12,7 +12,7 @@ struct RingView: View {
     
     @State public var showDetails = false
     
-    @State var scene: SCNScene? = .init(named: "untitled.usdc")
+    @State var scene: SCNScene? = .init(named: "Engagement_9mm.scn")
     // MARK: View Properties
     @State var isVerticalLook: Bool = false
     @State var currentSize: String = "9"
@@ -174,9 +174,20 @@ struct RingView: View {
         
         // MARK: Now Rotate the New Child Node
         if isVerticalLook{
-            scene?.rootNode.childNode(withName: "Root", recursively: true)?.eulerAngles.x = newAngle
+            scene?.rootNode.childNode(withName: "Circle", recursively: true)?.eulerAngles.x = newAngle
+            scene?.rootNode.childNode(withName: "Circle_002", recursively: true)?.eulerAngles.x = newAngle
+            scene?.rootNode.childNode(withName: "Plane", recursively: true)?.eulerAngles.x = newAngle
+            scene?.rootNode.childNode(withName: "Round", recursively: true)?.eulerAngles.x = newAngle
+            scene?.rootNode.childNode(withName: "Size", recursively: true)?.eulerAngles.x = newAngle
+            scene?.rootNode.childNode(withName: "_materials", recursively: true)?.eulerAngles.x = newAngle
+            
         }else{
-            scene?.rootNode.childNode(withName: "Root", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "Circle", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "Circle_002", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "Plane", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "Round", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "Size", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "_materials", recursively: true)?.eulerAngles.y = newAngle
         }
         
         if animate{
@@ -222,6 +233,6 @@ struct RingView: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RingView()
     }
 }
