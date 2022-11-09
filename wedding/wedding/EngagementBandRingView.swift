@@ -8,11 +8,11 @@
 import SwiftUI
 import SceneKit
 
-struct RingView: View {
+struct EngagementBandRingView: View {
     
-    @State public var showDetails = false
+    @State public var showEngagementRingDetails = false
     
-    @State var scene: SCNScene? = .init(named: "weddingBand2.scn")
+    @State var scene: SCNScene? = .init(named: "EngagementBandRing_XcodeScene.scn")
     // MARK: View Properties
     @State var isVerticalLook: Bool = false
     @State var currentSize: String = "9"
@@ -174,20 +174,9 @@ struct RingView: View {
         
         // MARK: Now Rotate the New Child Node
         if isVerticalLook{
-            scene?.rootNode.childNode(withName: "Ring2a", recursively: true)?.eulerAngles.x = newAngle
-//            scene?.rootNode.childNode(withName: "Circle_002", recursively: true)?.eulerAngles.x = newAngle
-//            scene?.rootNode.childNode(withName: "Plane", recursively: true)?.eulerAngles.x = newAngle
-//            scene?.rootNode.childNode(withName: "Round", recursively: true)?.eulerAngles.x = newAngle
-//            scene?.rootNode.childNode(withName: "Size", recursively: true)?.eulerAngles.x = newAngle
-//            scene?.rootNode.childNode(withName: "_materials", recursively: true)?.eulerAngles.x = newAngle
-//
+            scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.x = newAngle
         }else{
-            scene?.rootNode.childNode(withName: "Ring2a", recursively: true)?.eulerAngles.y = newAngle
-//            scene?.rootNode.childNode(withName: "Circle_002", recursively: true)?.eulerAngles.y = newAngle
-//            scene?.rootNode.childNode(withName: "Plane", recursively: true)?.eulerAngles.y = newAngle
-//            scene?.rootNode.childNode(withName: "Round", recursively: true)?.eulerAngles.y = newAngle
-//            scene?.rootNode.childNode(withName: "Size", recursively: true)?.eulerAngles.y = newAngle
-//            scene?.rootNode.childNode(withName: "_materials", recursively: true)?.eulerAngles.y = newAngle
+            scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.y = newAngle
         }
         
         if animate{
@@ -231,8 +220,8 @@ struct RingView: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct Engagement_Previews: PreviewProvider {
     static var previews: some View {
-        RingView()
+        EngagementBandRingView()
     }
 }

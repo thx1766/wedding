@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57223BB8291AE4820074FFEF /* engagementBand.scn in Resources */ = {isa = PBXBuildFile; fileRef = 57223BB6291AE4820074FFEF /* engagementBand.scn */; };
-		57223BBB291AE5AF0074FFEF /* weddingBand2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 57223BBA291AE5AF0074FFEF /* weddingBand2.scn */; };
 		5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D4252916277A00F2CC56 /* weddingApp.swift */; };
 		5733D4282916277A00F2CC56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D4272916277A00F2CC56 /* ContentView.swift */; };
 		5733D42A2916277C00F2CC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5733D4292916277C00F2CC56 /* Assets.xcassets */; };
 		5733D42D2916277C00F2CC56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5733D42C2916277C00F2CC56 /* Preview Assets.xcassets */; };
 		5733D43629162A2B00F2CC56 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43529162A2B00F2CC56 /* DetailsView.swift */; };
-		5733D43829162A6300F2CC56 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43729162A6300F2CC56 /* RingView.swift */; };
+		5733D43829162A6300F2CC56 /* EngagementBandRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */; };
 		5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43929162AF500F2CC56 /* CustomSceneView.swift */; };
+		5734F165291B66510009C462 /* WeddingBandRing_XcodeScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 5734F164291B66510009C462 /* WeddingBandRing_XcodeScene.scn */; };
+		5734F167291B66640009C462 /* EngagementBandRing_XcodeScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 5734F166291B66640009C462 /* EngagementBandRing_XcodeScene.scn */; };
+		5734F16A291B672F0009C462 /* WeddingBandRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734F169291B672F0009C462 /* WeddingBandRingView.swift */; };
 		5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7884462918FB0B00CB53B7 /* weddingappicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57223BB6291AE4820074FFEF /* engagementBand.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = engagementBand.scn; path = ../../engagementBand.scn; sourceTree = "<group>"; };
-		57223BBA291AE5AF0074FFEF /* weddingBand2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = weddingBand2.scn; path = ../../weddingBand2.scn; sourceTree = "<group>"; };
 		5733D4222916277A00F2CC56 /* wedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5733D4252916277A00F2CC56 /* weddingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weddingApp.swift; sourceTree = "<group>"; };
 		5733D4272916277A00F2CC56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5733D4292916277C00F2CC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5733D42C2916277C00F2CC56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5733D43529162A2B00F2CC56 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		5733D43729162A6300F2CC56 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementBandRingView.swift; sourceTree = "<group>"; };
 		5733D43929162AF500F2CC56 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
+		5734F164291B66510009C462 /* WeddingBandRing_XcodeScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = WeddingBandRing_XcodeScene.scn; sourceTree = "<group>"; };
+		5734F166291B66640009C462 /* EngagementBandRing_XcodeScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = EngagementBandRing_XcodeScene.scn; sourceTree = "<group>"; };
+		5734F169291B672F0009C462 /* WeddingBandRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingBandRingView.swift; sourceTree = "<group>"; };
 		5B7884462918FB0B00CB53B7 /* weddingappicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weddingappicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 		5733D4192916277A00F2CC56 = {
 			isa = PBXGroup;
 			children = (
+				5734F168291B666B0009C462 /* 3DScenes */,
 				5B7884462918FB0B00CB53B7 /* weddingappicon.png */,
 				5733D4242916277A00F2CC56 /* wedding */,
 				5733D4232916277A00F2CC56 /* Products */,
@@ -64,14 +67,13 @@
 		5733D4242916277A00F2CC56 /* wedding */ = {
 			isa = PBXGroup;
 			children = (
-				57223BBA291AE5AF0074FFEF /* weddingBand2.scn */,
-				57223BB6291AE4820074FFEF /* engagementBand.scn */,
 				5733D4252916277A00F2CC56 /* weddingApp.swift */,
 				5733D4272916277A00F2CC56 /* ContentView.swift */,
 				5733D4292916277C00F2CC56 /* Assets.xcassets */,
 				5733D42B2916277C00F2CC56 /* Preview Content */,
 				5733D43529162A2B00F2CC56 /* DetailsView.swift */,
-				5733D43729162A6300F2CC56 /* RingView.swift */,
+				5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */,
+				5734F169291B672F0009C462 /* WeddingBandRingView.swift */,
 				5733D43929162AF500F2CC56 /* CustomSceneView.swift */,
 			);
 			path = wedding;
@@ -83,6 +85,15 @@
 				5733D42C2916277C00F2CC56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5734F168291B666B0009C462 /* 3DScenes */ = {
+			isa = PBXGroup;
+			children = (
+				5734F166291B66640009C462 /* EngagementBandRing_XcodeScene.scn */,
+				5734F164291B66510009C462 /* WeddingBandRing_XcodeScene.scn */,
+			);
+			path = 3DScenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,11 +154,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5734F167291B66640009C462 /* EngagementBandRing_XcodeScene.scn in Resources */,
 				5733D42D2916277C00F2CC56 /* Preview Assets.xcassets in Resources */,
-				57223BBB291AE5AF0074FFEF /* weddingBand2.scn in Resources */,
 				5733D42A2916277C00F2CC56 /* Assets.xcassets in Resources */,
-				57223BB8291AE4820074FFEF /* engagementBand.scn in Resources */,
 				5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */,
+				5734F165291B66510009C462 /* WeddingBandRing_XcodeScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5733D43829162A6300F2CC56 /* RingView.swift in Sources */,
+				5733D43829162A6300F2CC56 /* EngagementBandRingView.swift in Sources */,
 				5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */,
 				5733D4282916277A00F2CC56 /* ContentView.swift in Sources */,
 				5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */,
+				5734F16A291B672F0009C462 /* WeddingBandRingView.swift in Sources */,
 				5733D43629162A2B00F2CC56 /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

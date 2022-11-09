@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State public var showDetails = false
+    @State public var showEngagementRingDetails = false
+    @State public var showWeddingRingDetails = false
     @State private var showingDetails = false
     @State private var textFieldString: String = ""
     var body: some View {
         if showingDetails {
             DetailsView()
-        } else if showDetails{
-            RingView()
-        } else {
+        } else if showEngagementRingDetails{
+            EngagementBandRingView()
+        } else if showWeddingRingDetails{
+            WeddingBandRingView()
+        }else {
             VStack{
                 Text("Save the Date!")
                 Text("October 7th, 2022")
                 TextField("Password", text: $textFieldString)
                 Button("Sign In", action: signin)
-                Button("Check Out The Ring!", action: ring)
+                Button("Check out the engagement ring!", action: engagementRing)
+                Button("Check out the wedding ring!", action: weddingRing)
             }
         }
     }
@@ -32,9 +36,14 @@ struct ContentView: View {
             showingDetails = true
         }
     }
-    public func ring(){
+    public func engagementRing(){
         if(textFieldString == "123"){
-            showDetails = true
+            showEngagementRingDetails = true
+        }
+    }
+    public func weddingRing(){
+        if(textFieldString == "123"){
+            showWeddingRingDetails = true
         }
     }
 }
