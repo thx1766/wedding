@@ -1,110 +1,40 @@
 //
-//  Home.swift
-//  3DShoeApp (iOS)
+//  EngagementBandRingView.swift
+//  wedding
 //
-//  Created by Venus on 29/08/22.
+//  Created by Nate on Nov 9th 2022
 //
 
 import SwiftUI
 import SceneKit
 
 struct EngagementBandRingView: View {
-    
+    @Binding var showingRingView: Bool
     @State public var showEngagementRingDetails = false
-    
     @State var scene: SCNScene? = .init(named: "EngagementBandRing_XcodeScene.scn")
     // MARK: View Properties
     @State var isVerticalLook: Bool = false
     @State var currentSize: String = "9"
     @Namespace var animation
-    
     @GestureState var offset: CGFloat = 0
     var body: some View {
         VStack{
-            HeaderView()
-            
-            // MARK: 3D Preview
-            CustomSceneView(scene: $scene)
-                .frame(height: 350)
-                .padding(.top,-50)
-                .padding(.bottom,-15)
-                .zIndex(-10)
-            
-            CustomSeeker()
-            
-            ShoePropertiesView()
+            Button("< Home", action: ShowDetailsView)
+            VStack{
+                Spacer()
+                CustomSceneView(scene: $scene)
+                    .frame(height: 350)
+                    .zIndex(-10)
+                CustomSeeker()
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
+        .background(Color.purple)
     }
     
-    // MARK: Shoe Properties
-    @ViewBuilder
-    func ShoePropertiesView()->some View{
-        VStack{
-            VStack(alignment: .leading, spacing: 12) {
-                Text("Wedding Ring")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                
-                Text("Save the Date: October 7th, 2023 ")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
-                
-                Label {
-                    Text("4.8")
-                        .fontWeight(.semibold)
-                } icon: {
-                    Image(systemName: "star.fill")
-                }
-                .foregroundColor(Color("Gold"))
-            }
-            .padding(.top,30)
-            .frame(maxWidth: .infinity,alignment: .leading)
-            
-            // MARK: Check Out Button
-            HStack(alignment: .top){
-                Button {
-                    
-                } label: {
-                    VStack(spacing: 12){
-                        Image("weddingappicon")
-                            .resizable()
-                            .renderingMode(.template)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 45, height: 45)
-                        
-                        Text("Open in Maps")
-                            .fontWeight(.semibold)
-                            .padding(.top,15)
-                    }
-                    .foregroundColor(.black)
-                    .padding(18)
-                    .background {
-                        RoundedRectangle(cornerRadius: 20, style: .continuous)
-                            .fill(.white)
-                    }
-                }
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Venue: Acadian Trail, San Fransisco")
-                        .font(.callout)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.gray)
-                    
-                    Button {
-                        
-                    } label: {
-                        Text("Click to open in Maps")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                    }
-                    .padding(.top,10)
-                }
-                .frame(maxWidth: .infinity,alignment: .leading)
-                .padding(.leading,20)
-            }
-            .padding(.top,30)
-        }
+    func ShowDetailsView(){
+        showingRingView = false
     }
     
     // MARK: Custom Seeker
@@ -130,7 +60,6 @@ struct EngagementBandRingView: View {
                     HStack(spacing: 3){
                         Image(systemName: "arrowtriangle.left.fill")
                             .font(.caption)
-                        
                         Image(systemName: "arrowtriangle.right.fill")
                             .font(.caption)
                     }
@@ -171,56 +100,11 @@ struct EngagementBandRingView: View {
             SCNTransaction.animationDuration = 0.4
         }
         let newAngle = Float((offset * .pi) / 180)
-        
-        // MARK: Now Rotate the New Child Node
-        
         //rotate in x and y axes together
         scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.x = newAngle
         scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.y = newAngle
-        
         if animate{
             SCNTransaction.commit()
         }
-    }
-    
-    // MARK: Header View
-    @ViewBuilder
-    func HeaderView()->some View{
-        HStack{
-            Button {
-                
-            } label: {
-                Image(systemName: "arrow.left")
-                    .font(.system(size: 16, weight: .heavy))
-                    .foregroundColor(.white)
-                    .frame(width: 42, height: 42)
-                    .background {
-                        RoundedRectangle(cornerRadius: 15, style: .continuous)
-                            .fill(.white.opacity(0.2))
-                    }
-            }
-            
-            Spacer()
-            
-            Button {
-                withAnimation(.easeInOut){isVerticalLook.toggle()}
-            } label: {
-                Image(systemName: "arrow.left.and.right.righttriangle.left.righttriangle.right.fill")
-                    .font(.system(size: 16, weight: .heavy))
-                    .foregroundColor(.white)
-                    .rotationEffect(.init(degrees: isVerticalLook ? 0 : 90))
-                    .frame(width: 42, height: 42)
-                    .background {
-                        RoundedRectangle(cornerRadius: 15, style: .continuous)
-                            .fill(.white.opacity(0.2))
-                    }
-            }
-        }
-    }
-}
-
-struct Engagement_Previews: PreviewProvider {
-    static var previews: some View {
-        EngagementBandRingView()
     }
 }

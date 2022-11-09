@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DetailsView: View {
+    @State var showingRingView = false
+    @State var showingWedding = false
+    @State var showingEngagement = false
     var body: some View {
         VStack {
             VStack{
@@ -42,7 +45,17 @@ struct DetailsView: View {
                 }
             }
             Spacer()
+            Button("Check out the engagement ring!"){showEngagementRingFunc()}
+            Button("Check out the wedding ring!"){showWeddingRingFunc()}
         }
+    }
+    func showWeddingRingFunc(){
+        showingRingView = true
+        showingWedding = true
+    }
+    func showEngagementRingFunc(){
+        showingRingView = true
+        showingEngagement = true
     }
 }
 

@@ -25,9 +25,3 @@ struct CustomSceneView: UIViewRepresentable {
         
     }
 }
-
-struct CustomSceneView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
