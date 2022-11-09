@@ -173,11 +173,10 @@ struct WeddingBandRingView: View {
         let newAngle = Float((offset * .pi) / 180)
         
         // MARK: Now Rotate the New Child Node
-        if isVerticalLook{
-            scene?.rootNode.childNode(withName: "WeddingBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.x = newAngle
-        }else{
-            scene?.rootNode.childNode(withName: "WeddingBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.y = newAngle
-        }
+        
+        //rotate in x and y axes
+        scene?.rootNode.childNode(withName: "WeddingBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.y = newAngle
+        scene?.rootNode.childNode(withName: "WeddingBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.x = newAngle
         
         if animate{
             SCNTransaction.commit()

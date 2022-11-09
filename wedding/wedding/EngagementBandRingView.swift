@@ -173,11 +173,10 @@ struct EngagementBandRingView: View {
         let newAngle = Float((offset * .pi) / 180)
         
         // MARK: Now Rotate the New Child Node
-        if isVerticalLook{
-            scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.x = newAngle
-        }else{
-            scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.y = newAngle
-        }
+        
+        //rotate in x and y axes together
+        scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.x = newAngle
+        scene?.rootNode.childNode(withName: "EngagementBandRing_UniversalSceneDescriptionPackage", recursively: true)?.eulerAngles.y = newAngle
         
         if animate{
             SCNTransaction.commit()
