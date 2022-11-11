@@ -88,3 +88,14 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Vapor
+weddingvapor/Packages
+weddingvapor/.build
+weddingvapor/xcuserdata
+weddingvapor/*.xcodeproj
+weddingvapor/DerivedData/
+.DS_Store
+weddingvapor/db.sqlite
+weddingvapor/.swiftpm
+weddingvapor/.env
