@@ -11,7 +11,19 @@ import SwiftUI
 struct weddingApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            AuthView()
         }
     }
 }
+
+struct AuthView: View {
+    
+    @StateObject private var userAuth = UserAuth.shared
+    
+    @State var username: String = ""
+
+    var body: some View {
+        HomeView().requiresAuthentication()
+    }
+}
+

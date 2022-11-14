@@ -10,7 +10,6 @@
 		5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D4252916277A00F2CC56 /* weddingApp.swift */; };
 		5733D42A2916277C00F2CC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5733D4292916277C00F2CC56 /* Assets.xcassets */; };
 		5733D42D2916277C00F2CC56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5733D42C2916277C00F2CC56 /* Preview Assets.xcassets */; };
-		5733D43629162A2B00F2CC56 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43529162A2B00F2CC56 /* DetailsView.swift */; };
 		5733D43829162A6300F2CC56 /* EngagementBandRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */; };
 		5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43929162AF500F2CC56 /* CustomSceneView.swift */; };
 		5734F165291B66510009C462 /* WeddingBandRing_XcodeScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 5734F164291B66510009C462 /* WeddingBandRing_XcodeScene.scn */; };
@@ -18,6 +17,9 @@
 		5734F16A291B672F0009C462 /* WeddingBandRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734F169291B672F0009C462 /* WeddingBandRingView.swift */; };
 		5734F176291BBBE50009C462 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734F175291BBBE50009C462 /* LoginView.swift */; };
 		5734F178291BBC720009C462 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734F177291BBC720009C462 /* HomeView.swift */; };
+		576BB8D1292297B600B6E3A3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BB8D0292297B600B6E3A3 /* SettingsView.swift */; };
+		576BB8D42922996B00B6E3A3 /* AlternateWeddingBand.scn in Resources */ = {isa = PBXBuildFile; fileRef = 576BB8D32922996B00B6E3A3 /* AlternateWeddingBand.scn */; };
+		576BB8D62922998A00B6E3A3 /* AlternateWeddingBandRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BB8D52922998A00B6E3A3 /* AlternateWeddingBandRingView.swift */; };
 		5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7884462918FB0B00CB53B7 /* weddingappicon.png */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +28,6 @@
 		5733D4252916277A00F2CC56 /* weddingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weddingApp.swift; sourceTree = "<group>"; };
 		5733D4292916277C00F2CC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5733D42C2916277C00F2CC56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5733D43529162A2B00F2CC56 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementBandRingView.swift; sourceTree = "<group>"; };
 		5733D43929162AF500F2CC56 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
 		5734F164291B66510009C462 /* WeddingBandRing_XcodeScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = WeddingBandRing_XcodeScene.scn; sourceTree = "<group>"; };
@@ -34,6 +35,9 @@
 		5734F169291B672F0009C462 /* WeddingBandRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingBandRingView.swift; sourceTree = "<group>"; };
 		5734F175291BBBE50009C462 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5734F177291BBC720009C462 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		576BB8D0292297B600B6E3A3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		576BB8D32922996B00B6E3A3 /* AlternateWeddingBand.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = AlternateWeddingBand.scn; sourceTree = "<group>"; };
+		576BB8D52922998A00B6E3A3 /* AlternateWeddingBandRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternateWeddingBandRingView.swift; sourceTree = "<group>"; };
 		5B7884462918FB0B00CB53B7 /* weddingappicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weddingappicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,14 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				5733D4252916277A00F2CC56 /* weddingApp.swift */,
+				576BB8D929229A9200B6E3A3 /* Settings */,
+				576BB8D829229A7C00B6E3A3 /* Home */,
+				576BB8D729229A7100B6E3A3 /* Login */,
+				576BB8D22922983D00B6E3A3 /* RingViews */,
 				5733D4292916277C00F2CC56 /* Assets.xcassets */,
 				5733D42B2916277C00F2CC56 /* Preview Content */,
-				5733D43529162A2B00F2CC56 /* DetailsView.swift */,
-				5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */,
-				5734F169291B672F0009C462 /* WeddingBandRingView.swift */,
-				5733D43929162AF500F2CC56 /* CustomSceneView.swift */,
-				5734F175291BBBE50009C462 /* LoginView.swift */,
-				5734F177291BBC720009C462 /* HomeView.swift */,
 			);
 			path = wedding;
 			sourceTree = "<group>";
@@ -93,10 +95,46 @@
 		5734F168291B666B0009C462 /* 3DScenes */ = {
 			isa = PBXGroup;
 			children = (
+				576BB8D32922996B00B6E3A3 /* AlternateWeddingBand.scn */,
 				5734F166291B66640009C462 /* EngagementBandRing_XcodeScene.scn */,
 				5734F164291B66510009C462 /* WeddingBandRing_XcodeScene.scn */,
 			);
 			path = 3DScenes;
+			sourceTree = "<group>";
+		};
+		576BB8D22922983D00B6E3A3 /* RingViews */ = {
+			isa = PBXGroup;
+			children = (
+				5733D43929162AF500F2CC56 /* CustomSceneView.swift */,
+				5733D43729162A6300F2CC56 /* EngagementBandRingView.swift */,
+				5734F169291B672F0009C462 /* WeddingBandRingView.swift */,
+				576BB8D52922998A00B6E3A3 /* AlternateWeddingBandRingView.swift */,
+			);
+			path = RingViews;
+			sourceTree = "<group>";
+		};
+		576BB8D729229A7100B6E3A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5734F175291BBBE50009C462 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		576BB8D829229A7C00B6E3A3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5734F177291BBC720009C462 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		576BB8D929229A9200B6E3A3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				576BB8D0292297B600B6E3A3 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +200,7 @@
 				5733D42A2916277C00F2CC56 /* Assets.xcassets in Resources */,
 				5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */,
 				5734F165291B66510009C462 /* WeddingBandRing_XcodeScene.scn in Resources */,
+				576BB8D42922996B00B6E3A3 /* AlternateWeddingBand.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,11 +213,12 @@
 			files = (
 				5733D43829162A6300F2CC56 /* EngagementBandRingView.swift in Sources */,
 				5734F176291BBBE50009C462 /* LoginView.swift in Sources */,
+				576BB8D1292297B600B6E3A3 /* SettingsView.swift in Sources */,
+				576BB8D62922998A00B6E3A3 /* AlternateWeddingBandRingView.swift in Sources */,
 				5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */,
 				5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */,
 				5734F178291BBC720009C462 /* HomeView.swift in Sources */,
 				5734F16A291B672F0009C462 /* WeddingBandRingView.swift in Sources */,
-				5733D43629162A2B00F2CC56 /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
