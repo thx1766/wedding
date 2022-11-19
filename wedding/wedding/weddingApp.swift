@@ -23,7 +23,7 @@ struct AuthView: View {
     @State var username: String = ""
 
     var body: some View {
-        HomeView().requiresAuthentication()
+        PrimaryNavigationView().requiresAuthentication()
     }
 }
 
