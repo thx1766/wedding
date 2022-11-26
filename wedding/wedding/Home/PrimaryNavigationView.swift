@@ -15,12 +15,12 @@ struct PrimaryNavigationView: View {
                 VStack{
                     NavigationView{
                         VStack{
-                            NavigationLink(destination: WeddingBandRingView()){
+                            NavigationLink(destination: Wedding_Ring_View()){
                                 Text("Wedding Ring")
                                     .frame(width: 200, height: 150)
                                     .background(Color.green)
                             }
-                            NavigationLink(destination: EngagementBandRingView()){
+                            NavigationLink(destination: Engagement_Ring_View()){
                                 Text("Engagement Ring")
                                     .frame(width: 200, height: 150)
                                     .background(Color.purple)
