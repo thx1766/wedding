@@ -20,6 +20,7 @@
 		974A05CE2932BD450040785A /* Engagement_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 974A05C62932BD450040785A /* Engagement_Ring.scn */; };
 		974A05D22932BEB50040785A /* Engagement_Ring_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A05D12932BEB50040785A /* Engagement_Ring_View.swift */; };
 		974A05D42932BF540040785A /* Wedding_Ring_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A05D32932BF540040785A /* Wedding_Ring_View.swift */; };
+		9768DC1D29335D0500CB9E7D /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9768DC1C29335D0500CB9E7D /* PhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		974A05C62932BD450040785A /* Engagement_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Engagement_Ring.scn; path = ../../3DSourceFiles/expensiveModels/2_SCN/Engagement_Ring.scn; sourceTree = "<group>"; };
 		974A05D12932BEB50040785A /* Engagement_Ring_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engagement_Ring_View.swift; sourceTree = "<group>"; };
 		974A05D32932BF540040785A /* Wedding_Ring_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wedding_Ring_View.swift; sourceTree = "<group>"; };
+		9768DC1C29335D0500CB9E7D /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		5733D4242916277A00F2CC56 /* wedding */ = {
 			isa = PBXGroup;
 			children = (
+				9768DC1E2933613000CB9E7D /* ImageViewer */,
 				5733D4252916277A00F2CC56 /* weddingApp.swift */,
 				576BB8D929229A9200B6E3A3 /* Settings */,
 				576BB8D829229A7C00B6E3A3 /* Home */,
@@ -132,6 +135,14 @@
 				974A05C22932BD440040785A /* Wedding_Ring.scn */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9768DC1E2933613000CB9E7D /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				9768DC1C29335D0500CB9E7D /* PhotoView.swift */,
+			);
+			path = ImageViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 				974A05D42932BF540040785A /* Wedding_Ring_View.swift in Sources */,
 				578EEDC92928AAA400A16331 /* PrimaryNavigationView.swift in Sources */,
 				5734F176291BBBE50009C462 /* LoginView.swift in Sources */,
+				9768DC1D29335D0500CB9E7D /* PhotoView.swift in Sources */,
 				576BB8D1292297B600B6E3A3 /* SettingsView.swift in Sources */,
 				5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */,
 				5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */,
