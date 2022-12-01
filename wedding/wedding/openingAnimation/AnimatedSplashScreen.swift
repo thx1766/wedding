@@ -24,6 +24,7 @@ struct AnimatedSplashScreen<Content: View>: View {
     
     // MARK: Controls and Callbacks
     @State var disableControls: Bool = true
+    @State var password: String = ""
     var body: some View {
         VStack(spacing: 0){
             if startAnimation{
@@ -40,15 +41,17 @@ struct AnimatedSplashScreen<Content: View>: View {
                             
                                 .background{Color(red: 255, green: 268, blue: 129)}
                             
-                            Image("SwiftIcon")
+                            Image("SplashImage")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .matchedGeometryEffect(id: "SPLASHICON", in: animation)
                                }
                         .ignoresSafeArea(.container, edges: .all)
-                        
+                        Text("Event Password Required").padding()
+                        TextField("Code", text: $password)
                         Button(action: {
                             print("Button action")
+                            UserAuth.shared.logInOrOff(passCode: password)
                         }) {
                             Text("Click to Login")
                             .padding (15.0)

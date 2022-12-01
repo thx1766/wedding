@@ -49,9 +49,11 @@ extension View {
     @ViewBuilder
     func requiresAuthentication() -> some View {
         if UserAuth.shared.isLoggedIn {
-            self
+            //self
+            PrimaryNavigationView()
         }else{
-            LoginView()
+            //LoginView()
+            ContentView2()
         }
     }
 }

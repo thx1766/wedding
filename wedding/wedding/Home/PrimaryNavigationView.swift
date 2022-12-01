@@ -68,10 +68,3 @@ struct PrimaryNavigationView: View {
         }
     }
 }
-
-
-struct PrimaryNavigationView_Previews: PreviewProvider {
-    static var previews: some View {
-        PrimaryNavigationView()
-    }
-}

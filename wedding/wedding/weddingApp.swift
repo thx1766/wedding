@@ -11,8 +11,7 @@ import SwiftUI
 struct weddingApp: App {
     var body: some Scene {
         WindowGroup {
-            //AuthView()
-            ContentView2()
+            AuthView()
         }
     }
 }
@@ -25,6 +24,7 @@ struct AuthView: View {
 
     var body: some View {
         PrimaryNavigationView().requiresAuthentication()
+        //ContentView2().requiresAuthentication()
     }
 }
 
