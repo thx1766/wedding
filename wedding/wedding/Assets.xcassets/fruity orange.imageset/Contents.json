@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "fruit-basket-agency-kk2eYi5M7JM-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

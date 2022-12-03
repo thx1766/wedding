@@ -41,22 +41,16 @@ struct PrimaryNavigationView: View {
             .frame(height: 600)
             NavigationView{
                 VStack{
-                    NavigationLink(destination: DetailsView()){
-                        Text("Details")
-                            .frame(width:200, height: 150)
-                        
-                    }
+                    DetailsView()
                 }
-                .navigationTitle("Event Info")
             }
             .frame(height: 500)
             NavigationView{
-                NavigationLink(destination: SettingsView()){
-                    VStack{
-                        Text("Logout").frame(width:300, height: 150);
-                    }
+                SettingsView()
+                   // VStack{
+                   //     Text("Logout").frame(width:300, height: 150);
+                   // }
                 }
-            }
             .frame(height: 100)
         }
         .overlay(
@@ -64,11 +58,11 @@ struct PrimaryNavigationView: View {
                 Color.clear
                     .background (.ultraThinMaterial)
                 .blur (radius: 10)
-            Text("Save The Date")
+            Text("Save the Date")
                     .foregroundColor(.accentColor)
-                    .font(.largeTitle)
-                .frame (maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 20)
+                    .font(.custom("Gistesy", size: 55))
+                .frame (maxWidth: .infinity, alignment: .center)
+                //.padding(.leading, 20)
             }
                 .frame (height: 110)
                 .frame(maxHeight: .infinity, alignment: .top)

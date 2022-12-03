@@ -30,7 +30,7 @@ struct DetailsView: View{
                 .font (.largeTitle)
                 .fontWeight(.bold)
                 .foregroundStyle(.linearGradient(colors:
-                                                    [.accentColor,.primary.opacity(0.2)],
+                                                    [.accentColor,.orange.opacity(0.6)],
                                                  startPoint: .topLeading, endPoint: .bottomTrailing))
                 .lineLimit(2)
             Text ("on October 7th, 2023".uppercased ())
@@ -54,7 +54,7 @@ struct DetailsView: View{
         .padding(.horizontal, 20)
         .background (
             Image ("Pic6")
-//                .resizable()
+ //               .resizable()
                .offset(x: 200, y: -150)
         )
         .overlay(
