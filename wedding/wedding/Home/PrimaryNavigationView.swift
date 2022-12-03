@@ -53,25 +53,24 @@ struct PrimaryNavigationView: View {
             NavigationView{
                 NavigationLink(destination: SettingsView()){
                     VStack{
-                        Text("Settings (Logout)").frame(width:300, height: 150);
-                    }.navigationTitle("Settings")
+                        Text("Logout").frame(width:300, height: 150);
+                    }
                 }
             }
-            .frame(height: 300)
+            .frame(height: 100)
         }
         .overlay(
             ZStack {
                 Color.clear
                     .background (.ultraThinMaterial)
                 .blur (radius: 10)
-                Text ("Save The Date")
-                .font(.largeTitle.weight(.bold))
+            Text("Save The Date")
+                    .foregroundColor(.accentColor)
+                    .font(.largeTitle)
                 .frame (maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 20)
-                
             }
-               
-                .frame (height: 90)
+                .frame (height: 110)
                 .frame(maxHeight: .infinity, alignment: .top)
         )
     }
