@@ -26,18 +26,26 @@ struct DetailsView: View{
              //   .background (.ultraThinMaterial, in:
                //                 RoundedRectangle(cornerRadius: 16, style: // .continuous))
             // .strokeStyle(cornerRadius: 16)
-            Text("are getting married")
-                .font (.largeTitle)
-                .fontWeight(.bold)
-                .foregroundStyle(.linearGradient(colors:
-                                                    [.accentColor,.orange.opacity(0.6)],
-                                                 startPoint: .topLeading, endPoint: .bottomTrailing))
-                .lineLimit(2)
-            Text ("on October 7th, 2023".uppercased ())
+            HStack{
+                Text("are getting married")
+                    .font(.system(size: 30))
+                    .foregroundStyle(.linearGradient(colors:
+                                                        [.accentColor,.orange.opacity(0.6)],
+                                                     startPoint: .center, endPoint: .bottomTrailing))
+                Image(systemName: "party.popper")
+                    .font(.system(size: 28))
+                    .foregroundColor(.orange)
+            }
+                
+            HStack{
+                Text ("on October 7th, 2023".uppercased())
+                Image(systemName: "calendar")}
                 .foregroundColor(.accentColor)
-                .fontWeight(.bold)
+              //  .fontWeight(.bold)
                 .foregroundStyle(.primary)
-            Text("At East Windsor, New Jersey")
+            HStack{
+                Text("At East Windsor, New Jersey")
+                Image(systemName: "mappin")}
                 .foregroundColor(.accentColor)
                // .font(.footnote)
                 .frame(maxWidth: .infinity, alignment: .leading)

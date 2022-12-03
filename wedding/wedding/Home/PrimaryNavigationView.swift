@@ -25,7 +25,7 @@ struct PrimaryNavigationView: View {
                 HStack{
                     NavigationLink(destination: Wedding_Ring_View()){
                         Text("Wedding Ring")
-                            .frame(width: 200, height: 150)
+                          .frame(width: 200, height: 150)
                         
                     }
                     NavigationLink(destination: Engagement_Ring_View()){
@@ -35,10 +35,9 @@ struct PrimaryNavigationView: View {
                     }
                 }
                 .frame(width: 300, height: 400)
-                
-                .navigationTitle("Check out rings")
+                .navigationTitle("check out our rings")
             }
-            .frame(height: 600)
+            .frame(height: 500)
             NavigationView{
                 VStack{
                     DetailsView()
@@ -62,7 +61,7 @@ struct PrimaryNavigationView: View {
                     .foregroundColor(.accentColor)
                     .font(.custom("Gistesy", size: 55))
                 .frame (maxWidth: .infinity, alignment: .center)
-                //.padding(.leading, 20)
+                      //.padding(.leading, 20)
             }
                 .frame (height: 110)
                 .frame(maxHeight: .infinity, alignment: .top)
