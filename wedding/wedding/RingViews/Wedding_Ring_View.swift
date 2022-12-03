@@ -37,7 +37,6 @@ struct Wedding_Ring_View: View {
             }
             .padding()
         }
-        .background(Color.purple)
     }
     
     // MARK: Custom Seeker

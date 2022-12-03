@@ -18,30 +18,29 @@ struct PrimaryNavigationView: View {
                             NavigationLink(destination: PhotoView()){
                                 Text("Engagement Photos")
                                     .frame(width: 200, height: 150)
-                                    .background(Color.cyan)
+                                  
                             }
                         }
                         .frame(width: 300, height: 400)
-                        .background(Color.orange)
-                        .navigationTitle("Images!")
+                        .navigationTitle("Images")
                     }
                     .frame(height: 500)
                     NavigationView{
-                        VStack{
+                        HStack{
                             NavigationLink(destination: Wedding_Ring_View()){
                                 Text("Wedding Ring")
                                     .frame(width: 200, height: 150)
-                                    .background(Color.green)
+                                  
                             }
                             NavigationLink(destination: Engagement_Ring_View()){
                                 Text("Engagement Ring")
                                     .frame(width: 200, height: 150)
-                                    .background(Color.purple)
+                          
                             }
                         }
                         .frame(width: 300, height: 400)
-                        .background(Color.blue)
-                        .navigationTitle("Hardware!")
+                    
+                        .navigationTitle("Check out rings")
                     }
                     .frame(height: 600)
                     NavigationView{
@@ -49,16 +48,16 @@ struct PrimaryNavigationView: View {
                             NavigationLink(destination: DetailsView()){
                                 Text("Details")
                                     .frame(width:200, height: 150)
-                                    .background(Color.red)
+                                    
                             }
                         }
-                        .navigationTitle("Event Info!")
+                        .navigationTitle("Event Info")
                     }
                     .frame(height: 500)
                     NavigationView{
                      NavigationLink(destination: SettingsView()){
                          VStack{
-                             Text("Settings (Logout)").frame(width:300, height: 150).background(Color.gray)
+                             Text("Settings (Logout)").frame(width:300, height: 150);
                          }.navigationTitle("Settings")
                     }
                     }
