@@ -10,16 +10,17 @@ import SwiftUI
 struct PrimaryNavigationView: View {
     var body: some View {
         VStack{
-            Text("Save The Date")
+            Image("savethedate")
+                .resizable()
+                .scaledToFit()
             ScrollView{
                 VStack{
                     NavigationView{
                         VStack{
-                            NavigationLink(destination: PhotoView()){
-                                Text("Engagement Photos")
-                                    .frame(width: 200, height: 150)
-                                  
-                            }
+                            Text("photobooth")
+                            .font(.custom("Covered", size: 23))
+                           
+                            PhotoView()}
                         }
                         .frame(width: 300, height: 400)
                         .navigationTitle("Images")
@@ -66,4 +67,3 @@ struct PrimaryNavigationView: View {
             }
         }
     }
-}

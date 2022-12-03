@@ -19,6 +19,7 @@
 		5B3017812938F9E900715924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3017802938F9E900715924 /* ContentView.swift */; };
 		5B3017832938FA1000715924 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3017822938FA1000715924 /* Extensions.swift */; };
 		5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7884462918FB0B00CB53B7 /* weddingappicon.png */; };
+		5BB9BD43293B8B3500818C58 /* Covered_By_Your_Grace in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9BD42293B8B3500818C58 /* Covered_By_Your_Grace */; };
 		974A05CA2932BD450040785A /* Wedding_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 974A05C22932BD440040785A /* Wedding_Ring.scn */; };
 		974A05CE2932BD450040785A /* Engagement_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 974A05C62932BD450040785A /* Engagement_Ring.scn */; };
 		974A05D22932BEB50040785A /* Engagement_Ring_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A05D12932BEB50040785A /* Engagement_Ring_View.swift */; };
@@ -40,6 +41,8 @@
 		5B3017802938F9E900715924 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B3017822938FA1000715924 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5B7884462918FB0B00CB53B7 /* weddingappicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weddingappicon.png; sourceTree = "<group>"; };
+		5BB9BD42293B8B3500818C58 /* Covered_By_Your_Grace */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Covered_By_Your_Grace; sourceTree = "<group>"; };
+		5BB9BD44293B8DC300818C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		974A05C22932BD440040785A /* Wedding_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Wedding_Ring.scn; path = ../../3DSourceFiles/expensiveModels/2_SCN/Wedding_Ring.scn; sourceTree = "<group>"; };
 		974A05C62932BD450040785A /* Engagement_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Engagement_Ring.scn; path = ../../3DSourceFiles/expensiveModels/2_SCN/Engagement_Ring.scn; sourceTree = "<group>"; };
 		974A05D12932BEB50040785A /* Engagement_Ring_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engagement_Ring_View.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		5733D4242916277A00F2CC56 /* wedding */ = {
 			isa = PBXGroup;
 			children = (
+				5BB9BD44293B8DC300818C58 /* Info.plist */,
 				5733D4252916277A00F2CC56 /* weddingApp.swift */,
 				5B30177F2938F9B900715924 /* openingAnimation */,
 				9768DC1E2933613000CB9E7D /* ImageViewer */,
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				5734F177291BBC720009C462 /* DetailsView.swift */,
+				5BB9BD42293B8B3500818C58 /* Covered_By_Your_Grace */,
 				578EEDC82928AAA400A16331 /* PrimaryNavigationView.swift */,
 			);
 			path = Home;
@@ -224,6 +229,7 @@
 				5733D42D2916277C00F2CC56 /* Preview Assets.xcassets in Resources */,
 				974A05CE2932BD450040785A /* Engagement_Ring.scn in Resources */,
 				5733D42A2916277C00F2CC56 /* Assets.xcassets in Resources */,
+				5BB9BD43293B8B3500818C58 /* Covered_By_Your_Grace in Resources */,
 				5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +384,7 @@
 				DEVELOPMENT_TEAM = 4C4FN7PLAL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wedding/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,6 +415,7 @@
 				DEVELOPMENT_TEAM = 4C4FN7PLAL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wedding/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

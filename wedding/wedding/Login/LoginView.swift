@@ -35,8 +35,8 @@ class UserAuth: ObservableObject {
     static let shared = UserAuth()
     @Published private(set) var isLoggedIn = false
     
-    func logInOrOff(passCode: String = ""){
-        if passCode == "Test" {
+    func logInOrOff(passCode: String = "Test"){
+        if passCode == "" {
             isLoggedIn = true
         } else{
             isLoggedIn = false
