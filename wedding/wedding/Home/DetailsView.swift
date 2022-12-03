@@ -41,13 +41,13 @@ struct DetailsView: View{
                 Text ("on October 7th, 2023".uppercased())
                 Image(systemName: "calendar")}
                 .foregroundColor(.accentColor)
-              //  .fontWeight(.bold)
+                .font(.system(size: 20.0, weight: .bold))
                 .foregroundStyle(.primary)
             HStack{
                 Text("At East Windsor, New Jersey")
                 Image(systemName: "mappin")}
                 .foregroundColor(.accentColor)
-               // .font(.footnote)
+               .font(.system(size: 20.0))
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
        .padding(.all, 20.0)
