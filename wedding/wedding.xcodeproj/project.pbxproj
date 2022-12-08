@@ -16,6 +16,7 @@
 		578EEDC92928AAA400A16331 /* PrimaryNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EEDC82928AAA400A16331 /* PrimaryNavigationView.swift */; };
 		57E1782A2940FDD000EAB7C7 /* Wedding_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 57E178282940FDCF00EAB7C7 /* Wedding_Ring.scn */; };
 		57E1782B2940FDD000EAB7C7 /* Engagement_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 57E178292940FDD000EAB7C7 /* Engagement_Ring.scn */; };
+		57E1782F294247A300EAB7C7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1782E294247A300EAB7C7 /* SettingsView.swift */; };
 		5B30177E2938F9A800715924 /* AnimatedSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30177D2938F9A800715924 /* AnimatedSplashScreen.swift */; };
 		5B3017812938F9E900715924 /* PasswordPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3017802938F9E900715924 /* PasswordPageView.swift */; };
 		5B3017832938FA1000715924 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3017822938FA1000715924 /* Extensions.swift */; };
@@ -38,6 +39,7 @@
 		578EEDC82928AAA400A16331 /* PrimaryNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryNavigationView.swift; sourceTree = "<group>"; };
 		57E178282940FDCF00EAB7C7 /* Wedding_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Wedding_Ring.scn; sourceTree = "<group>"; };
 		57E178292940FDD000EAB7C7 /* Engagement_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Engagement_Ring.scn; sourceTree = "<group>"; };
+		57E1782E294247A300EAB7C7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5B30177D2938F9A800715924 /* AnimatedSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSplashScreen.swift; sourceTree = "<group>"; };
 		5B3017802938F9E900715924 /* PasswordPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordPageView.swift; sourceTree = "<group>"; };
 		5B3017822938FA1000715924 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				576BB8D22922983D00B6E3A3 /* RingViews */,
 				5733D4292916277C00F2CC56 /* Assets.xcassets */,
 				5733D42B2916277C00F2CC56 /* Preview Content */,
+				57E1782E294247A300EAB7C7 /* SettingsView.swift */,
 			);
 			path = wedding;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */,
 				5734F178291BBC720009C462 /* DetailsView.swift in Sources */,
 				974A05D22932BEB50040785A /* Engagement_Ring_View.swift in Sources */,
+				57E1782F294247A300EAB7C7 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

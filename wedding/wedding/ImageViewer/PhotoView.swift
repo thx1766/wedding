@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PhotoView: View {
     @State var cards: [Card] = []
+    @State var hasBeenDisplayed: Bool = false
     var body: some View {
         VStack{
             Carousel3D(cardSize: CGSize(width: 150, height: 220), items: cards, id: \.id, content: { card in
@@ -41,8 +42,11 @@ struct PhotoView: View {
 //            }
         }
         .onAppear {
-            for index in 1...6{
-                cards.append(.init(imageFile: "Pic\(index)"))
+            if(!hasBeenDisplayed){
+                for index in 1...6{
+                    cards.append(.init(imageFile: "Pic\(index)"))
+                }
+                hasBeenDisplayed = true
             }
         }
     }

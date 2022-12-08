@@ -48,6 +48,11 @@ struct AuthView: View {
                     Image(systemName:"calendar")
                     Text("RSVP")
                 }
+            SettingsView()
+                .tabItem{
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
    
         .requiresAuthentication()
