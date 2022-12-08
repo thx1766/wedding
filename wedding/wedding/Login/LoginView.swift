@@ -50,10 +50,10 @@ extension View {
     func requiresAuthentication() -> some View {
         if UserAuth.shared.isLoggedIn {
             //self
-            PrimaryNavigationView()
+            self
         }else{
             //LoginView()
-            ContentView2()
+            PasswordPageView()
         }
     }
 }

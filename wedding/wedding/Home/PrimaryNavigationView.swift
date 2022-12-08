@@ -26,12 +26,12 @@ struct PrimaryNavigationView: View {
                     NavigationLink(destination: Wedding_Ring_View()){
                         Text("Wedding Ring")
                           .frame(width: 200, height: 150)
-                        
+
                     }
                     NavigationLink(destination: Engagement_Ring_View()){
                         Text("Engagement Ring")
                             .frame(width: 200, height: 150)
-                        
+
                     }
                 }
                 .frame(width: 300, height: 400)
@@ -44,27 +44,6 @@ struct PrimaryNavigationView: View {
                 }
             }
             .frame(height: 500)
-            NavigationView{
-                SettingsView()
-                   // VStack{
-                   //     Text("Logout").frame(width:300, height: 150);
-                   // }
-                }
-            .frame(height: 100)
         }
-        .overlay(
-            ZStack {
-                Color.clear
-                    .background (.ultraThinMaterial)
-                .blur (radius: 10)
-            Text("Save the Date")
-                    .foregroundColor(.accentColor)
-                    .font(.custom("Gistesy", size: 55))
-                .frame (maxWidth: .infinity, alignment: .center)
-                      //.padding(.leading, 20)
-            }
-                .frame (height: 110)
-                .frame(maxHeight: .infinity, alignment: .top)
-        )
     }
-        }
+}
