@@ -31,7 +31,6 @@ struct PrimaryNavigationView: View {
                     NavigationLink(destination: Engagement_Ring_View()){
                         Text("Engagement Ring")
                             .frame(width: 200, height: 150)
-
                     }
                 }
                 .frame(width: 300, height: 400)

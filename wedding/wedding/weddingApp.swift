@@ -27,27 +27,29 @@ struct AuthView: View {
             PrimaryNavigationView()
                 .tabItem{
                     Image(systemName: "house.fill")
-                    Text("mainView")
+                    Text("Home")
                 }
-            SettingsView()
+                .overlay(
+                    ZStack {
+                        Color.clear
+                            .background (.ultraThinMaterial)
+                        .blur (radius: 10)
+                    Text("Save the Date")
+                            .foregroundColor(.accentColor)
+                            .font(.custom("Gistesy", size: 55))
+                        .frame (maxWidth: .infinity, alignment: .center)
+                              //.padding(.leading, 20)
+                    }
+                        .frame (height: 110)
+                        .frame(maxHeight: .infinity, alignment: .top)
+                )
+            LocationMapView()
                 .tabItem{
-                    Image(systemName:"gear")
-                    Text("Settings")
+                    Image(systemName:"calendar")
+                    Text("RSVP")
                 }
-        }.overlay(
-            ZStack {
-                Color.clear
-                    .background (.ultraThinMaterial)
-                .blur (radius: 10)
-            Text("Save the Date")
-                    .foregroundColor(.accentColor)
-                    .font(.custom("Gistesy", size: 55))
-                .frame (maxWidth: .infinity, alignment: .center)
-                      //.padding(.leading, 20)
-            }
-                .frame (height: 110)
-                .frame(maxHeight: .infinity, alignment: .top)
-        )
+        }
+   
         .requiresAuthentication()
     }
 }

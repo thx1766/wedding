@@ -13,13 +13,13 @@
 		5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733D43929162AF500F2CC56 /* CustomSceneView.swift */; };
 		5734F176291BBBE50009C462 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734F175291BBBE50009C462 /* LoginView.swift */; };
 		5734F178291BBC720009C462 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734F177291BBC720009C462 /* DetailsView.swift */; };
-		576BB8D1292297B600B6E3A3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BB8D0292297B600B6E3A3 /* SettingsView.swift */; };
 		578EEDC92928AAA400A16331 /* PrimaryNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EEDC82928AAA400A16331 /* PrimaryNavigationView.swift */; };
 		57E1782A2940FDD000EAB7C7 /* Wedding_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 57E178282940FDCF00EAB7C7 /* Wedding_Ring.scn */; };
 		57E1782B2940FDD000EAB7C7 /* Engagement_Ring.scn in Resources */ = {isa = PBXBuildFile; fileRef = 57E178292940FDD000EAB7C7 /* Engagement_Ring.scn */; };
 		5B30177E2938F9A800715924 /* AnimatedSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30177D2938F9A800715924 /* AnimatedSplashScreen.swift */; };
 		5B3017812938F9E900715924 /* PasswordPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3017802938F9E900715924 /* PasswordPageView.swift */; };
 		5B3017832938FA1000715924 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3017822938FA1000715924 /* Extensions.swift */; };
+		5B56EE412941F74500712E84 /* RSVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B56EE402941F74500712E84 /* RSVPView.swift */; };
 		5B7884472918FB0B00CB53B7 /* weddingappicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7884462918FB0B00CB53B7 /* weddingappicon.png */; };
 		5BB9BD47293BE29500818C58 /* Gistesy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9BD46293BE29500818C58 /* Gistesy.ttf */; };
 		974A05D22932BEB50040785A /* Engagement_Ring_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A05D12932BEB50040785A /* Engagement_Ring_View.swift */; };
@@ -35,13 +35,13 @@
 		5733D43929162AF500F2CC56 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
 		5734F175291BBBE50009C462 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5734F177291BBC720009C462 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		576BB8D0292297B600B6E3A3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		578EEDC82928AAA400A16331 /* PrimaryNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryNavigationView.swift; sourceTree = "<group>"; };
 		57E178282940FDCF00EAB7C7 /* Wedding_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Wedding_Ring.scn; sourceTree = "<group>"; };
 		57E178292940FDD000EAB7C7 /* Engagement_Ring.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Engagement_Ring.scn; sourceTree = "<group>"; };
 		5B30177D2938F9A800715924 /* AnimatedSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSplashScreen.swift; sourceTree = "<group>"; };
 		5B3017802938F9E900715924 /* PasswordPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordPageView.swift; sourceTree = "<group>"; };
 		5B3017822938FA1000715924 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5B56EE402941F74500712E84 /* RSVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSVPView.swift; sourceTree = "<group>"; };
 		5B7884462918FB0B00CB53B7 /* weddingappicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weddingappicon.png; sourceTree = "<group>"; };
 		5BB9BD44293B8DC300818C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5BB9BD46293BE29500818C58 /* Gistesy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gistesy.ttf; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 				5733D4252916277A00F2CC56 /* weddingApp.swift */,
 				5B30177F2938F9B900715924 /* openingAnimation */,
 				9768DC1E2933613000CB9E7D /* ImageViewer */,
-				576BB8D929229A9200B6E3A3 /* Settings */,
+				5B56EE3F2941F71E00712E84 /* RSVP */,
 				576BB8D829229A7C00B6E3A3 /* Home */,
 				576BB8D729229A7100B6E3A3 /* Login */,
 				576BB8D22922983D00B6E3A3 /* RingViews */,
@@ -133,14 +133,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		576BB8D929229A9200B6E3A3 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				576BB8D0292297B600B6E3A3 /* SettingsView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		5B30177F2938F9B900715924 /* openingAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +141,14 @@
 				5B30177D2938F9A800715924 /* AnimatedSplashScreen.swift */,
 			);
 			path = openingAnimation;
+			sourceTree = "<group>";
+		};
+		5B56EE3F2941F71E00712E84 /* RSVP */ = {
+			isa = PBXGroup;
+			children = (
+				5B56EE402941F74500712E84 /* RSVPView.swift */,
+			);
+			path = RSVP;
 			sourceTree = "<group>";
 		};
 		5BB9BD45293BE22000818C58 /* Fonts */ = {
@@ -247,8 +247,8 @@
 				578EEDC92928AAA400A16331 /* PrimaryNavigationView.swift in Sources */,
 				5734F176291BBBE50009C462 /* LoginView.swift in Sources */,
 				9768DC1D29335D0500CB9E7D /* PhotoView.swift in Sources */,
-				576BB8D1292297B600B6E3A3 /* SettingsView.swift in Sources */,
 				5B3017832938FA1000715924 /* Extensions.swift in Sources */,
+				5B56EE412941F74500712E84 /* RSVPView.swift in Sources */,
 				5733D43A29162AF500F2CC56 /* CustomSceneView.swift in Sources */,
 				5733D4262916277A00F2CC56 /* weddingApp.swift in Sources */,
 				5734F178291BBC720009C462 /* DetailsView.swift in Sources */,
