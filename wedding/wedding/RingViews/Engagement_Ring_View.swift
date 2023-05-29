@@ -1,18 +1,9 @@
-//
+
 //  Engagement_Ring_View.swift
 //  wedding
-//
-//  Created by user232646 on 11/26/22.
-//
+
 
 import Foundation
-//
-//  EngagementBandRingView.swift
-//  wedding
-//
-//  Created by Nate on Nov 9th 2022
-//
-
 import SwiftUI
 import SceneKit
 
